@@ -1,0 +1,22 @@
+#define MAX_ARRAY_LENGHT 20
+This directive tells the CPP to replace instances of MAX_ARRAY_LENGTH with 20.
+
+#include <stdio.h>
+#include "myheader.h"
+
+This directives tell the CPP to get stdio.h from System Libraries and add the text to the current source file. The next line tells CPP to get myheader.h from the local directory and add the content to the current source file.
+
+#undef FILE_SIZE
+#define FILE_SIZE 42
+
+It tells the CPP to undefine existing FILE_SIZE and define it as 42
+
+#ifndef MESSAGE
+	#define MESSAGE "You wish!"
+#endif
+
+It tells the CPP to define MESSAGE only if MESSAGE isn't already defined.
+
+#ifdef DEBUG
+       /* Your debugging statements here */
+#endif

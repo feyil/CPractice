@@ -10,3 +10,7 @@ int main() {
 
   return 0;
 }
+
+/*
+  Here, it should be noted that scanf() expects input in the same format as you provided %s and %d which means you have to provide valid inputs like "string integer".
+ */
